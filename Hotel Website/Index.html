@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="CSS/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:1100px)"
+      href="CSS/widescreen.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body id="home">
+    <nav id="navbar">
+      <h1 class="logo">
+        <span class="text-primary"> <i class="fas fa-hotel"></i> Hotel </span
+        >Hotel
+      </h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#what">What</a></li>
+        <li><a href="#who">Who</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Header: Showcase -->
+
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="bh1">Neque porro quisquam</h1>
+        <p class="lead">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
+          dolore? Soluta consequatur ipsum animi debitis!
+        </p>
+        <a href="#what" class="btn">Read More</a>
+      </div>
+    </header>
+
+    <section id="what" class="bg-light py-1">
+      <div class="container">
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-hotel fa-3x"></i>
+            <div>
+              <h3>Great Location</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                eligendi.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <i class="fas fa-utensils fa-3x"></i>
+            <div>
+              <h3>Free Meals</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                eligendi.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <i class="fas fa-dumbbell fa-3x"></i>
+            <div>
+              <h3>Fitness Room</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                eligendi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who">
+      <div class="who-img"></div>
+      <div class="who-text bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure
+          omnis nulla nemo rerum laboriosam voluptate natus quidem est, eius
+          labore neque error laudantium incidunt, temporibus inventore sint
+          sapiente! Nesciunt.
+        </p>
+        <h3>History Of Our Hotel</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          earum non cumque asperiores possimus doloremque tempore quo enim! Ea
+          minima et ad, non hic tempora veniam nihil corporis magnam sequi
+          blanditiis ab quaerat voluptatum ex optio odio? Numquam, est deserunt.
+        </p>
+      </div>
+    </section>
+
+    <section id="clients" class="py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Our</span>
+          Clients
+        </h2>
+        <div class="items py-1">
+
+          <div><img src="./Img/logos/logo3.png" alt="Client" /></div>
+          <div><img src="./Img/logos/logo4.png" alt="Client" /></div>
+          <div><img src="./Img/logos/logo5.png" alt="Client" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Please use the form below to contact</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+          </div>
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="Phone"
+              id="Phone"
+              placeholder="Enter Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Message</label>
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Send" class="btn btn-dark" />
+        </form>
+      </div>
+      <div class="map"></div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Copyright &copy; 2020, Hotel All Rights Reserverd</p>
+      </div>
+    </footer>
+
+    <!-- Jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/main.js"></script>
+
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDV-EJye-LR7YuVolGSh9Mq6bWB_OGWwA&callback=initMap"
+    ></script>
+
+    <!--  AIzaSyCDV-EJye-LR7YuVolGSh9Mq6bWB_OGWwA  -->
+  </body>
+</html>
